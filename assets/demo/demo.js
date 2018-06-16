@@ -22,14 +22,21 @@ demo = {
       type: 'line',
 
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "nov", "dec"],
         datasets: [{
             borderColor: "#6bd098",
             backgroundColor: "#6bd098",
             pointRadius: 0,
             pointHoverRadius: 0,
             borderWidth: 3,
-            data: [300, 310, 316, 322, 330, 326, 333, 345, 338, 354]
+            data: [6000000, 6400000, 6300000, 6200000, 6100000, 6000000, 5950000, 6500000, 6400000, 6800000, 6200000, 6200000]
+          },{
+            borderColor: "#d00",
+            backgroundColor: "#e00",
+            pointRadius: 0,
+            pointHoverRadius: 0,
+            borderWidth: 2,
+            data: [6000000, 6400000, 6300000, 6200000, 6100000, 6000000, 5950000, 6500000, 6400000, 6800000, 6200000, 6200000]
           },
           {
             borderColor: "#f17e5d",
@@ -37,7 +44,7 @@ demo = {
             pointRadius: 0,
             pointHoverRadius: 0,
             borderWidth: 3,
-            data: [320, 340, 365, 360, 370, 385, 390, 384, 408, 420]
+            data: [780000, 00000, 800000, 800000, 800000, 800000, 800000, 800000, 800000, 800000, 800000, 800000]
           },
           {
             borderColor: "#fcc468",
@@ -45,7 +52,7 @@ demo = {
             pointRadius: 0,
             pointHoverRadius: 0,
             borderWidth: 3,
-            data: [370, 394, 415, 409, 425, 445, 460, 450, 478, 484]
+            data: [365671, 365671, 365671, 365671, 365671, 365671, 365671, 365671, 365671, 365671, 365671, 365671, 365671]
           }
         ]
       },
@@ -103,14 +110,15 @@ demo = {
       type: 'line',
 
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
-        datasets: [{
-            borderColor: "#6bd098",
-            backgroundColor: "#6bd098",
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [
+          {
+            borderColor: "#fcc468",
+            backgroundColor: "#fcc468",
             pointRadius: 0,
             pointHoverRadius: 0,
             borderWidth: 3,
-            data: [300, 310, 316, 322, 330, 326, 333, 345, 338, 354]
+            data: [365671, 365671, 365671, 365671, 365671, 365671]
           },
           {
             borderColor: "#f17e5d",
@@ -118,15 +126,15 @@ demo = {
             pointRadius: 0,
             pointHoverRadius: 0,
             borderWidth: 3,
-            data: [320, 340, 365, 360, 370, 385, 390, 384, 408, 420]
+            data: [100000,  800000,  600000,  800000,  700000,  900000]
           },
           {
-            borderColor: "#fcc468",
-            backgroundColor: "#fcc468",
+            borderColor: "#6bd098",
+            backgroundColor: "#6bd098",
             pointRadius: 0,
             pointHoverRadius: 0,
             borderWidth: 3,
-            data: [370, 394, 415, 409, 425, 445, 460, 450, 478, 484]
+            data: [6000000, 6400000, 6300000, 6200000, 6100000, 6000000]
           }
         ]
       },
@@ -243,7 +251,7 @@ demo = {
     var speedCanvas = document.getElementById("speedChart");
 
     var dataFirst = {
-      data: [0, 19, 15, 20, 30, 40, 40, 50, 25, 30, 50, 70],
+      data: [1150000000, 1400000000, 900000000, 1250000000, 1150000000, 880000000],
       fill: false,
       borderColor: '#fbc658',
       backgroundColor: 'transparent',
@@ -254,19 +262,19 @@ demo = {
     };
 
     var dataSecond = {
-      data: [0, 5, 10, 12, 20, 27, 30, 34, 42, 45, 55, 63],
+      data: [570000000, 570000000, 570000000, 570000000, 570000000, 570000000, 570000000, 570000000, 570000000, 570000000, 570000000, 570000000],
       fill: false,
-      borderColor: '#51CACF',
+      borderColor: '#b00',
       backgroundColor: 'transparent',
-      pointBorderColor: '#51CACF',
-      pointRadius: 4,
-      pointHoverRadius: 4,
-      pointBorderWidth: 8
+      pointBorderColor: '#d00',
+      pointRadius: 0,
+      pointHoverRadius: 0,
+      pointBorderWidth: 0,
     };
 
     var speedData = {
       labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-      datasets: [dataFirst, dataSecond]
+      datasets: [dataFirst, dataSecond, {data:[0]}]
     };
 
     var chartOptions = {
