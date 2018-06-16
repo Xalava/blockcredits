@@ -41,16 +41,28 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li >
-            <a href="">
-              <i class="nc-icon nc-globe"></i>
-              <p>Vision globale</p>
-            </a>
-          </li>
-          <li class="active ">
+          <li class="active">
             <a href="./montaigne.html">
               <i class="nc-icon nc-bank"></i>
               <p>Bordeaux Montaigne</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <i class="nc-icon nc-bank"></i>
+              <p>Lille 1</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <i class="nc-icon nc-bank"></i>
+              <p>Paris 2</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <i class="nc-icon nc-bank"></i>
+              <p>Paris-Est</p>
             </a>
           </li>
         </ul>
@@ -68,7 +80,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Université Bordeaux Montaigne</a>
+            <a class="navbar-brand" href="#pablo">Université Bordeaux Montaigne - 2018</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -115,6 +127,86 @@
   
 </div> -->
       <div class="content">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">Source de financement</h5>
+                <p class="card-category"></p>
+              </div>
+              <div class="card-body ">
+                <canvas id="chartEmail"></canvas>
+              </div>
+              <div class="card-footer ">
+                <div class="legend">
+                  <i class="fa fa-circle text-primary"></i> Subvention CSP <br />
+                  <i class="fa fa-circle text-warning"></i> Recettes propres <br />
+                  <i class="fa fa-circle text-danger"></i> Autres financements publics <br />
+                  <i class="fa fa-circle text-gray"></i> Financements fléchés
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">Dépenses</h5>
+                <p class="card-category"></p>
+              </div>
+              <div class="card-body ">
+                <canvas id=chartHours width="400" height="100"></canvas>
+              </div>
+              <div class="card-footer ">
+                <div class="legend">
+                  <i class="fa fa-circle text-success"></i> Personnel <br />
+                  <i class="fa fa-circle text-warning"></i> Investissement <br />
+                  <i class="fa fa-circle text-danger"></i> Fonctionnement
+                </div>
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-history"></i> Updated 24 minutes ago
+                  <small class="float-right"><i class="fa fa-exclamation-triangle"></i> Données fictives dans le cadre du Hackathon <a href="https://datafin.fr">#datafin</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-title">Trésorerie</h5>
+                <p class="card-category"></p>
+              </div>
+              <div class="card-body">
+                <canvas id="speedChart" width="400" height="100"></canvas>
+              </div>
+              <div class="card-footer">
+                <div class="card-stats">
+                  <small class="float-right"><i class="fa fa-exclamation-triangle"></i> Données fictives dans le cadre du Hackathon <a href="https://datafin.fr">#datafin</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-title">Flux de crédits</h5>
+                <p class="card-category"></p>
+              </div>
+              <div class="card-body">
+                <svg width="847" height="520" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0, 10)"><g class="links" fill="none" stroke-opacity="0.4"><path d="M5,421.4253773057576C142.83333333333334,421.4253773057576,142.83333333333334,307.252655114589,280.6666666666667,307.252655114589" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,438.0408049189494C142.83333333333334,438.0408049189494,142.83333333333334,450.5813303521519,280.6666666666667,450.5813303521519" stroke-width="4.583566238121855" style="stroke: rgb(191, 105, 105);"></path><path d="M5,398.5075461151482C142.83333333333334,398.5075461151482,142.83333333333334,104.30687534935747,280.6666666666667,104.30687534935747" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,427.15483510340994C142.83333333333334,427.15483510340994,142.83333333333334,354.8378982671882,280.6666666666667,354.8378982671882" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,443.1973169368365C142.83333333333334,443.1973169368365,142.83333333333334,496.21855785354927,280.6666666666667,496.21855785354927" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,404.23700391280056C142.83333333333334,404.23700391280056,142.83333333333334,158.76746785913915,280.6666666666667,158.76746785913915" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,415.69591950810525C142.83333333333334,415.69591950810525,142.83333333333334,259.66741196198984,280.6666666666667,259.66741196198984" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,432.8842929010623C142.83333333333334,432.8842929010623,142.83333333333334,402.42314141978744,280.6666666666667,402.42314141978744" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,393.3510340972611C142.83333333333334,393.3510340972611,142.83333333333334,48.12744550027976,280.6666666666667,48.12744550027976" stroke-width="4.583566238121855" style="stroke: rgb(191, 105, 105);"></path><path d="M5,409.9664617104529C142.83333333333334,409.9664617104529,142.83333333333334,209.7903856903298,280.6666666666667,209.7903856903298" stroke-width="5.729457797652318" style="stroke: rgb(191, 105, 105);"></path><path d="M5,209.7484628283959C142.83333333333334,209.7484628283959,142.83333333333334,240.18725544997193,280.6666666666667,240.18725544997193" stroke-width="33.23085522638345" style="stroke: rgb(127, 191, 105);"></path><path d="M5,175.9446618222472C142.83333333333334,175.9446618222472,142.83333333333334,189.73728339854665,280.6666666666667,189.73728339854665" stroke-width="34.37674678591391" style="stroke: rgb(127, 191, 105);"></path><path d="M5,303.711570709894C142.83333333333334,303.711570709894,142.83333333333334,384.0888764673,280.6666666666667,384.0888764673" stroke-width="30.93907210732252" style="stroke: rgb(127, 191, 105);"></path><path d="M5,100.88876467300184C142.83333333333334,100.88876467300184,142.83333333333334,81.38904415874819,280.6666666666667,81.38904415874819" stroke-width="40.10620458356623" style="stroke: rgb(127, 191, 105);"></path><path d="M5,272.77249860257143C142.83333333333334,272.77249860257143,142.83333333333334,336.5036333147008,280.6666666666667,336.5036333147008" stroke-width="30.93907210732252" style="stroke: rgb(127, 191, 105);"></path><path d="M5,57.91783119060945C142.83333333333334,57.91783119060945,142.83333333333334,22.917831190609558,280.6666666666667,22.917831190609558" stroke-width="45.83566238121855" style="stroke: rgb(127, 191, 105);"></path><path d="M5,335.22358859698176C142.83333333333334,335.22358859698176,142.83333333333334,432.24706539966445,280.6666666666667,432.24706539966445" stroke-width="32.084963666852985" style="stroke: rgb(127, 191, 105);"></path><path d="M5,241.83342649524891C142.83333333333334,241.83342649524891,142.83333333333334,288.91839016210156,280.6666666666667,288.91839016210156" stroke-width="30.93907210732252" style="stroke: rgb(127, 191, 105);"></path><path d="M5,366.1626607043043C142.83333333333334,366.1626607043043,142.83333333333334,478.45723868082706,280.6666666666667,478.45723868082706" stroke-width="29.79318054779206" style="stroke: rgb(127, 191, 105);"></path><path d="M5,139.84907769703761C142.83333333333334,139.84907769703761,142.83333333333334,136.99552822806032,280.6666666666667,136.99552822806032" stroke-width="37.8144214645053" style="stroke: rgb(127, 191, 105);"></path><path d="M5,462.93739519284543C142.83333333333334,462.93739519284543,142.83333333333334,405.7462269424258,280.6666666666667,405.7462269424258" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,460.18725544997227C142.83333333333334,460.18725544997227,142.83333333333334,262.9904974846282,280.6666666666667,262.9904974846282" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,457.4371157070991C142.83333333333334,457.4371157070991,142.83333333333334,107.6299608719958,280.6666666666667,107.6299608719958" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,462.02068194522104C142.83333333333334,462.02068194522104,142.83333333333334,358.16098378982656,280.6666666666667,358.16098378982656" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,456.5204024594747C142.83333333333334,456.5204024594747,142.83333333333334,50.87758524315287,280.6666666666667,50.87758524315287" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,463.7395192845168C142.83333333333334,463.7395192845168,142.83333333333334,453.216880939072,280.6666666666667,453.216880939072" stroke-width="0.6875349357182784" style="stroke: rgb(105, 139, 191);"></path><path d="M5,461.10396869759666C142.83333333333334,461.10396869759666,142.83333333333334,310.57574063722734,280.6666666666667,310.57574063722734" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,464.5416433761881C142.83333333333334,464.5416433761881,142.83333333333334,499.5416433761876,280.6666666666667,499.5416433761876" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,458.3538289547235C142.83333333333334,458.3538289547235,142.83333333333334,162.09055338177748,280.6666666666667,162.09055338177748" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M5,459.2705422023479C142.83333333333334,459.2705422023479,142.83333333333334,213.11347121296814,280.6666666666667,213.11347121296814" stroke-width="0.916713247624371" style="stroke: rgb(105, 139, 191);"></path><path d="M285.6666666666667,301.40860816098365C423.5,301.40860816098365,423.5,378.1833426495247,561.3333333333334,378.1833426495247" stroke-width="19.25097820011179" style="stroke: rgb(174, 191, 105);"></path><path d="M285.6666666666667,282.615986584684C423.5,282.615986584684,423.5,176.3610955841253,561.3333333333334,176.3610955841253" stroke-width="18.33426495248742" style="stroke: rgb(174, 191, 105);"></path><path d="M285.6666666666667,446.3415315818891C423.5,446.3415315818891,423.5,433.52990497484603,561.3333333333334,433.52990497484603" stroke-width="14.438233650083841" style="stroke: rgb(139, 191, 105);"></path><path d="M285.6666666666667,427.6634991615426C423.5,427.6634991615426,423.5,233.65567356064847,561.3333333333334,233.65567356064847" stroke-width="22.917831190609274" style="stroke: rgb(139, 191, 105);"></path><path d="M285.6666666666667,75.08664058133064C423.5,75.08664058133064,423.5,85.83566238121864,561.3333333333334,85.83566238121864" stroke-width="27.50139742873113" style="stroke: rgb(105, 191, 105);"></path><path d="M285.6666666666667,98.4628283957521C423.5,98.4628283957521,423.5,301.1794298490776,561.3333333333334,301.1794298490776" stroke-width="19.25097820011179" style="stroke: rgb(105, 191, 105);"></path><path d="M285.6666666666667,330.2012297372832C423.5,330.2012297372832,423.5,194.69536053661272,561.3333333333334,194.69536053661272" stroke-width="18.33426495248742" style="stroke: rgb(105, 191, 139);"></path><path d="M285.6666666666667,348.99385131358287C423.5,348.99385131358287,423.5,397.4343208496365,561.3333333333334,397.4343208496365" stroke-width="19.25097820011179" style="stroke: rgb(105, 191, 139);"></path><path d="M285.6666666666667,472.1548351034095C423.5,472.1548351034095,423.5,253.7087758524316,561.3333333333334,253.7087758524316" stroke-width="17.188373392956954" style="stroke: rgb(105, 191, 174);"></path><path d="M285.6666666666667,490.3745108999439C423.5,490.3745108999439,423.5,450.37451089994386,561.3333333333334,450.37451089994386" stroke-width="19.25097820011179" style="stroke: rgb(105, 191, 174);"></path><path d="M285.6666666666667,130.69312465064277C423.5,130.69312465064277,423.5,112.19116825041931,561.3333333333334,112.19116825041931" stroke-width="25.2096143096702" style="stroke: rgb(105, 174, 191);"></path><path d="M285.6666666666667,152.92342090553376C423.5,152.92342090553376,423.5,320.4304080491894,561.3333333333334,320.4304080491894" stroke-width="19.25097820011179" style="stroke: rgb(105, 174, 191);"></path><path d="M285.6666666666667,233.88485187255438C423.5,233.88485187255438,423.5,156.8809390721074,561.3333333333334,156.8809390721074" stroke-width="20.626048071548347" style="stroke: rgb(105, 139, 191);"></path><path d="M285.6666666666667,253.82336500838446C423.5,253.82336500838446,423.5,358.93236444941294,561.3333333333334,358.93236444941294" stroke-width="19.25097820011179" style="stroke: rgb(105, 139, 191);"></path><path d="M285.6666666666667,396.5790944661821C423.5,396.5790944661821,423.5,416.68529904974827,561.3333333333334,416.68529904974827" stroke-width="19.25097820011179" style="stroke: rgb(105, 105, 191);"></path><path d="M285.6666666666667,377.7864728898824C423.5,377.7864728898824,423.5,213.02962548910014,561.3333333333334,213.02962548910014" stroke-width="18.33426495248742" style="stroke: rgb(105, 105, 191);"></path><path d="M285.6666666666667,41.710452766909164C423.5,41.710452766909164,423.5,281.92845164896585,561.3333333333334,281.92845164896585" stroke-width="19.25097820011179" style="stroke: rgb(139, 105, 191);"></path><path d="M285.6666666666667,16.042481833426777C423.5,16.042481833426777,423.5,56.04248183342658,561.3333333333334,56.04248183342658" stroke-width="32.084963666852985" style="stroke: rgb(139, 105, 191);"></path><path d="M285.6666666666667,203.9463387367244C423.5,203.9463387367244,423.5,339.68138624930117,561.3333333333334,339.68138624930117" stroke-width="19.25097820011179" style="stroke: rgb(174, 105, 191);"></path><path d="M285.6666666666667,183.4348798211291C423.5,183.4348798211291,423.5,135.6819452207938,561.3333333333334,135.6819452207938" stroke-width="21.771939631078812" style="stroke: rgb(174, 105, 191);"></path><path d="M566.3333333333334,344.4941307993292C704.1666666666667,344.4941307993292,704.1666666666667,253.86528787031875,842,253.86528787031875" stroke-width="48.12744550027951" style="stroke: rgb(191, 105, 174);"></path><path d="M566.3333333333334,392.6215762996087C704.1666666666667,392.6215762996087,704.1666666666667,311.99273337059833,842,311.99273337059833" stroke-width="48.12744550027951" style="stroke: rgb(191, 105, 174);"></path><path d="M566.3333333333334,296.36668529904966C704.1666666666667,296.36668529904966,704.1666666666667,195.73784237003917,842,195.73784237003917" stroke-width="48.12744550027951" style="stroke: rgb(191, 105, 174);"></path><path d="M566.3333333333334,438.3426495248743C704.1666666666667,438.3426495248743,704.1666666666667,367.7138065958638,842,367.7138065958638" stroke-width="43.314700950251556" style="stroke: rgb(191, 105, 174);"></path><path d="M566.3333333333334,245.1145891559531C704.1666666666667,245.1145891559531,704.1666666666667,467.81162660704314,842,467.81162660704314" stroke-width="34.37674678591391" style="stroke: rgb(138, 105, 191);"></path><path d="M566.3333333333334,113.33705980994976C704.1666666666667,113.33705980994976,704.1666666666667,88.33705980994971,842,88.33705980994971" stroke-width="146.67411961989936" style="stroke: rgb(138, 105, 191);"></path><path d="M566.3333333333334,207.3001676914478C704.1666666666667,207.3001676914478,704.1666666666667,419.9972051425379,842,419.9972051425379" stroke-width="41.25209614309669" style="stroke: rgb(138, 105, 191);"></path></g><g class="nodes" font-family="sans-serif" font-size="10"><g><rect x="842" y="450.62325321408616" height="34.37674678591384" width="5" fill="#000"></rect><text x="836" y="467.8116266070431" dy="0.35em" text-anchor="end">Doctorat</text></g><g><rect x="842" y="15.000000000000028" height="146.6741196198994" width="5" fill="#000"></rect><text x="836" y="88.33705980994972" dy="0.35em" text-anchor="end">Licence</text></g><g><rect x="842" y="399.37115707098957" height="41.252096143096594" width="5" fill="#000"></rect><text x="836" y="419.99720514253784" dy="0.35em" text-anchor="end">Master</text></g><g><rect x="842" y="171.67411961989941" height="48.12744550027958" width="5" fill="#000"></rect><text x="836" y="195.7378423700392" dy="0.35em" text-anchor="end">Mathématiques et informatique</text></g><g><rect x="842" y="229.801565120179" height="48.12744550027958" width="5" fill="#000"></rect><text x="836" y="253.86528787031878" dy="0.35em" text-anchor="end">Physique</text></g><g><rect x="842" y="346.056456120738" height="43.31470095025156" width="5" fill="#000"></rect><text x="836" y="367.7138065958638" dy="0.35em" text-anchor="end">Sciences de l'homme et de la société</text></g><g><rect x="842" y="287.9290106204586" height="48.12744550027941" width="5" fill="#000"></rect><text x="836" y="311.99273337059833" dy="0.35em" text-anchor="end">Sciences de la vie</text></g><g><rect x="280.6666666666667" y="172.5489100055897" height="41.02291783119051" width="5" fill="#000"></rect><text x="274.6666666666667" y="193.06036892118496" dy="0.35em" text-anchor="end">Université Bordeaux montaigne</text></g><g><rect x="280.6666666666667" y="118.08831749580767" height="44.46059250978203" width="5" fill="#000"></rect><text x="274.6666666666667" y="140.3186137506987" dy="0.35em" text-anchor="end">Université de Lille</text></g><g><rect x="280.6666666666667" y="273.4488541084403" height="37.58524315259922" width="5" fill="#000"></rect><text x="274.6666666666667" y="292.2414756847399" dy="0.35em" text-anchor="end">Université de Lyon 1</text></g><g><rect x="280.6666666666667" y="463.560648406931" height="36.43935159306875" width="5" fill="#000"></rect><text x="274.6666666666667" y="481.7803242034654" dy="0.35em" text-anchor="end">Université de Marseille</text></g><g><rect x="280.6666666666667" y="223.57182783678022" height="39.87702627166004" width="5" fill="#000"></rect><text x="274.6666666666667" y="243.51034097261024" dy="0.35em" text-anchor="end">Université de Nantes</text></g><g><rect x="280.6666666666667" y="321.0340972610395" height="37.58524315259922" width="5" fill="#000"></rect><text x="274.6666666666667" y="339.8267188373391" dy="0.35em" text-anchor="end">Université de Picardie</text></g><g><rect x="280.6666666666667" y="2.8421709430404007e-13" height="51.33594186696479" width="5" fill="#000"></rect><text x="274.6666666666667" y="25.667970933482678" dy="0.35em" text-anchor="end">Université de Tatooine</text></g><g><rect x="280.6666666666667" y="368.6193404136387" height="37.58524315259922" width="5" fill="#000"></rect><text x="274.6666666666667" y="387.41196198993833" dy="0.35em" text-anchor="end">Université Panthéon Assas</text></g><g><rect x="280.6666666666667" y="61.33594186696507" height="46.7523756288426" width="5" fill="#000"></rect><text x="274.6666666666667" y="84.71212968138637" dy="0.35em" text-anchor="end">Université Paris-Est</text></g><g><rect x="280.6666666666667" y="416.20458356623794" height="37.35606484069308" width="5" fill="#000"></rect><text x="274.6666666666667" y="434.8826159865845" dy="0.35em" text-anchor="end">UTC</text></g><g><rect x="0" y="391.05925097820017" height="55.00279485746239" width="5" fill="#000"></rect><text x="11" y="418.56064840693136" dy="0.35em" text-anchor="start">ANR</text></g><g><rect x="0" y="35.00000000000017" height="346.0592509782" width="5" fill="#000"></rect><text x="11" y="208.02962548910017" dy="0.35em" text-anchor="start">SCSP</text></g><g><rect x="0" y="456.06204583566256" height="8.93795416433727" width="5" fill="#000"></rect><text x="11" y="460.5310229178312" dy="0.35em" text-anchor="start">UE</text></g><g><rect x="561.3333333333334" y="40.000000000000085" height="222.30296254890982" width="5" fill="#000"></rect><text x="555.3333333333334" y="151.151481274455" dy="0.35em" text-anchor="end">Formation</text></g><g><rect x="561.3333333333334" y="272.30296254890993" height="187.69703745109" width="5" fill="#000"></rect><text x="555.3333333333334" y="366.1514812744549" dy="0.35em" text-anchor="end">Recherche</text></g></g></g></svg>
+              </div>
+              <div class="card-footer">
+                <div class="card-stats">
+                  <i class="fa fa-check"></i> Data information certified
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
@@ -216,71 +308,6 @@
                 <hr>
                 <div class="stats">
                   <i class="fa fa-refresh"></i> Update now
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card ">
-              <div class="card-header ">
-                <h5 class="card-title">Dépenses</h5>
-                <p class="card-category"></p>
-              </div>
-              <div class="card-body ">
-                <canvas id=chartHours width="400" height="100"></canvas>
-              </div>
-              <div class="card-footer ">
-                <hr>
-                <div class="stats">
-                  <i class="fa fa-history"></i> Updated 24 minutes ago
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card ">
-              <div class="card-header ">
-                <h5 class="card-title">Source de financement</h5>
-                <p class="card-category"></p>
-              </div>
-              <div class="card-body ">
-                <canvas id="chartEmail"></canvas>
-              </div>
-              <div class="card-footer ">
-                <div class="legend">
-                  <i class="fa fa-circle text-primary"></i> Subvention CSP
-                  <i class="fa fa-circle text-warning"></i> Recettes propres
-                  <i class="fa fa-circle text-danger"></i> Autres financements publics
-                  <i class="fa fa-circle text-gray"></i> Financements fléchés
-                </div>
-                <hr>
-                <div class="stats">
-                  <i class="fa fa-calendar"></i> 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-title">Brevets déposés</h5>
-                <p class="card-category"></p>
-              </div>
-              <div class="card-body">
-                <canvas id="speedChart" width="400" height="100"></canvas>
-              </div>
-              <div class="card-footer">
-                <div class="chart-legend">
-                  <i class="fa fa-circle text-info"></i> En propre
-                  <i class="fa fa-circle text-warning"></i> En cooperétaion
-                </div>
-                <hr/>
-                <div class="card-stats">
-                  <i class="fa fa-check"></i> Data information certified
                 </div>
               </div>
             </div>
